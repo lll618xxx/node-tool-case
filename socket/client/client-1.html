@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>client-1</title>
+</head>
+<body>
+    <button class="sendall">点击广播消息</button>
+    <button class="send-2">发送给2</button>
+    <button class="send-3">发送给3</button>
+    <div id="message"></div>
+    <script>
+
+        var message =  document.querySelector('#message')
+
+        if(window.WebSocket){
+            var ws = new WebSocket('ws://10.0.0.203:8082/user1');
+
+            ws.onopen = function(e){
+                ws.send("client-1连接进来");
+                console.log(e, 'open');
+            }
+            ws.onclose = function(e){
+                console.log(e, 'close');
+            }
+            ws.onerror = function(e){
+                console.log(e, 'error');
+            }
+
+            ws.onmessage = function(e){
+                document.querySelector(".sendall").onclick = function(e){
+                    ws.send("client-1点击按钮发送数据");
+                }
+                message.innerHTML += e.data + '<br>'
+            }
+        }    
+    </script>
+</body>
+</html>
