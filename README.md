@@ -9,3 +9,4 @@
 - [socket 通信](https://github.com/lll618xxx/node-tool-case/tree/master/socket)
 - [静态服务器](https://github.com/lll618xxx/node-tool-case/tree/master/static-server)
 - [文件压缩](https://github.com/lll618xxx/node-tool-case/tree/master/compress-file)
+- [释放端口](https://github.com/lll618xxx/node-tool-case/tree/master/killport)
