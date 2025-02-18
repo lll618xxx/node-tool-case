@@ -10,3 +10,4 @@
 - [静态服务器](https://github.com/lll618xxx/node-tool-case/tree/master/static-server)
 - [文件压缩](https://github.com/lll618xxx/node-tool-case/tree/master/compress-file)
 - [释放端口](https://github.com/lll618xxx/node-tool-case/tree/master/killport)
+- [下载网站所有的图片资源](https://github.com/lll618xxx/node-tool-case/tree/master/downloadImg)
